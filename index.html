@@ -1900,7 +1900,7 @@ function ajustarMargemBalanca(){
   var cur = parseFloat(getComputedStyle(wrap).marginTop) || BASE;
   var refBottom = ref.getBoundingClientRect().bottom;
   var tops = [pl.getBoundingClientRect().top, pr.getBoundingClientRect().top];
-  if (mob){ var pv = document.getElementById('pivot-animal'); if (pv) tops.push(pv.getBoundingClientRect().top); }
+  var pv = document.getElementById('pivot-animal'); if (pv) tops.push(pv.getBoundingClientRect().top);
   var topo = Math.min.apply(null, tops);
   var alvo = cur + (refBottom + folga - topo) / z;   // /z converte px renderizado em margem (zoom)
   if (alvo < BASE) alvo = BASE;
