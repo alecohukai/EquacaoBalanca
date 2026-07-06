@@ -1,4 +1,4 @@
-# claudeBalanca.md — Balança de Equações
+# CLAUDE.md — Balança de Equações
 
 App educativo interativo em HTML single-file para ensino de equações de 1º grau (7º ano).
 
